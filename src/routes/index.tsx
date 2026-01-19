@@ -3,6 +3,7 @@ import { Login } from '../pages/login';
 import Home from '../pages/home';
 import { useEffect, useState } from 'react';
 import IconeDeInternet from '../components/IconeDeInternet';
+import Cadastro from '../pages/cadastro';
 
 export function AppRoutes() {
 
@@ -21,6 +22,7 @@ export function AppRoutes() {
       <IconeDeInternet/>
       <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/home" element={<Home />} />
       
       {/* Rota para página 404 (opcional) */}

@@ -4,9 +4,9 @@ import { useNetworkStatus } from "../hooks/useNetworkStatus";
 export default function IconeDeInternet(){
 
     // Simulação da sua variável externa de sincronização
-    const [isSyncingData, setIsSyncingData] = useState(true);
+    const [isSyncingData, setIsSyncingData] = useState(false);
   
-  // Chama o hook passando a dependência de sincronização
+    // Chama o hook passando a dependência de sincronização
     const status = useNetworkStatus(isSyncingData);
 
     setIsSyncingData
@@ -18,6 +18,5 @@ export default function IconeDeInternet(){
     } else {
         return <img src='./syncing.png' className='absolute h-10 w-10 right-5 top-5'></img>  
     }
-   
-      
+     
 }
